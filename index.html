@@ -26,7 +26,7 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;700&family=Noto+Serif+SC:wght@600;700;900&display=swap" rel="stylesheet">
 
 <!-- Structured data for SEO -->
 <script type="application/ld+json">
@@ -68,6 +68,9 @@
 html{scroll-behavior:smooth}
 body{font-family:var(--body);color:var(--ink);background:var(--bg);line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden}
 h1,h2,h3,h4{font-family:var(--display);line-height:1.15;color:var(--navy);font-weight:700;letter-spacing:-.02em}
+/* Chinese mode: serif display for headings */
+html[lang="zh-CN"] h1,html[lang="zh-CN"] h2,html[lang="zh-CN"] h3,html[lang="zh-CN"] h4{font-family:'Noto Serif SC','Sora',serif;letter-spacing:.015em;line-height:1.3}
+html[lang="zh-CN"] h1{font-weight:900}
 a{color:inherit;text-decoration:none}
 img{max-width:100%;display:block}
 .container{max-width:var(--maxw);margin:0 auto;padding:0 24px}
@@ -96,6 +99,7 @@ section{scroll-margin-top:90px}
 .brand-name{font-family:var(--display);font-weight:800;font-size:1.18rem;color:var(--navy);letter-spacing:-.02em}
 .brand-sub{font-size:.66rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--red)}
 .nav-links{display:flex;align-items:center;gap:6px;list-style:none}
+.nav-links .mob-cta{display:none}
 .nav-links a{font-family:var(--display);font-weight:500;font-size:.96rem;color:var(--ink);padding:9px 14px;border-radius:10px;position:relative;transition:color .2s,background .2s}
 .nav-links a:hover{color:var(--blue);background:var(--blue-soft)}
 .nav-links a.active{color:var(--red)}
@@ -117,12 +121,9 @@ section{scroll-margin-top:90px}
 /* ---------- Hero ---------- */
 .hero{position:relative;min-height:660px;display:flex;align-items:center;overflow:hidden;
   background:
-    linear-gradient(90deg, rgba(7,21,41,.80) 0%, rgba(7,21,41,.46) 40%, rgba(7,21,41,.12) 68%, rgba(7,21,41,0) 100%),
-    linear-gradient(0deg, rgba(7,21,41,.66) 0%, rgba(7,21,41,.14) 36%, rgba(7,21,41,0) 60%),
-    url('hero-bc.jpg'),
-    url('https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=2000&q=80'),
-    #0b2545;
-  background-size:cover;background-position:center;background-repeat:no-repeat}
+    linear-gradient(90deg, rgba(6,18,38,.52) 0%, rgba(6,18,38,.2) 48%, rgba(6,18,38,0) 72%),
+    linear-gradient(180deg,#081c38 0%,#0d2b52 34%,#17498c 64%,#3b83c9 86%,#66a5db 100%)}
+.hero-scene .bc-scene{position:absolute;bottom:0;left:0;width:100%;height:66%;z-index:1}
 .hero-scene{position:absolute;inset:0;width:100%;height:100%;z-index:1}
 .hero-scene svg{position:absolute;bottom:0;width:100%;height:auto}
 .cloud{position:absolute;background:#fff;border-radius:100px;filter:blur(2px);opacity:.85;z-index:2}
@@ -213,9 +214,19 @@ section{scroll-margin-top:90px}
 .pagehead p{color:#eaf4ff;margin-top:14px;max-width:60ch;position:relative;z-index:6;font-size:1.1rem}
 .pagehead .hero-wave{bottom:-1px}
 
-/* ---------- How it works ---------- */
-.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;counter-reset:s}
-.step{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:30px 24px;position:relative}
+/* ---------- How it works: balloon ascent ---------- */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;counter-reset:s;position:relative}
+.step{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:30px 24px;position:relative;z-index:1}
+/* cards rise left→right like a balloon taking off */
+@media(min-width:981px){
+  .step:nth-of-type(1){margin-top:66px}
+  .step:nth-of-type(2){margin-top:44px}
+  .step:nth-of-type(3){margin-top:22px}
+  .step:nth-of-type(4){margin-top:0}
+}
+.journey-path{position:absolute;left:2%;right:2%;top:-6px;height:110px;z-index:0;pointer-events:none}
+.step-balloon{position:absolute;top:-40px;right:20px;width:34px;height:44px;filter:drop-shadow(0 8px 10px rgba(11,37,69,.3));animation:float 7s ease-in-out infinite}
+@media(max-width:980px){.journey-path,.step-balloon{display:none}}
 .step .num{width:46px;height:46px;border-radius:12px;background:var(--red);color:#fff;font-family:var(--display);font-weight:800;font-size:1.25rem;display:grid;place-items:center;margin-bottom:18px}
 .step h3{font-size:1.1rem;margin-bottom:8px}
 .step p{color:var(--muted);font-size:.93rem}
@@ -307,7 +318,7 @@ section{scroll-margin-top:90px}
   .hamburger{display:flex}
   .nav-links.open{display:flex;position:absolute;top:74px;left:0;right:0;flex-direction:column;align-items:stretch;background:#fff;padding:14px 18px 22px;gap:4px;box-shadow:var(--shadow);border-bottom:1px solid var(--line);z-index:110}
   .nav-links.open a{padding:13px 14px;border-radius:10px}
-  .nav-links.open .mob-cta{margin-top:8px;text-align:center;background:var(--red);color:#fff}
+  .nav-links.open .mob-cta{display:block;margin-top:8px;text-align:center;background:var(--red);color:#fff}
 
   /* Grids */
   .grid-3,.grid-services,.grid-quotes,.grid-listings,.steps,.grid-notes{grid-template-columns:1fr}
@@ -433,6 +444,33 @@ section{scroll-margin-top:90px}
 <section class="page active" id="home">
   <div class="hero">
     <div class="hero-scene" aria-hidden="true">
+      <svg class="bc-scene" viewBox="0 0 1440 520" preserveAspectRatio="xMidYMax slice" aria-hidden="true">
+        <!-- stars -->
+        <g fill="#ffffff" opacity=".5">
+          <circle cx="180" cy="40" r="1.4"/><circle cx="420" cy="24" r="1"/><circle cx="700" cy="58" r="1.3"/>
+          <circle cx="960" cy="30" r="1"/><circle cx="1180" cy="66" r="1.5"/><circle cx="1340" cy="26" r="1"/>
+        </g>
+        <!-- horizon glow -->
+        <ellipse cx="1030" cy="365" rx="520" ry="120" fill="#f4c98a" fill-opacity=".1"/>
+        <!-- far ridge with snow caps -->
+        <path d="M0 300 L130 210 L235 285 L340 180 L470 290 L590 205 L710 300 L840 190 L960 285 L1090 165 L1230 280 L1330 215 L1440 290 L1440 400 L0 400 Z" fill="#3c6cab"/>
+        <g fill="#e9f2fc" opacity=".85">
+          <path d="M340 180 L372 216 L352 212 L336 226 L318 210 L308 214 Z"/>
+          <path d="M840 190 L870 224 L852 219 L836 232 L820 218 L812 221 Z"/>
+          <path d="M1090 165 L1124 206 L1102 200 L1086 216 L1066 199 L1056 203 Z"/>
+        </g>
+        <!-- mid ridge -->
+        <path d="M0 356 L110 288 L240 350 L390 268 L530 352 L660 292 L800 356 L950 278 L1100 350 L1240 296 L1360 348 L1440 320 L1440 440 L0 440 Z" fill="#274e88"/>
+        <!-- near ridge -->
+        <path d="M0 412 L160 348 L330 410 L520 342 L700 412 L880 352 L1070 410 L1250 356 L1440 404 L1440 470 L0 470 Z" fill="#16335f"/>
+        <!-- water -->
+        <rect x="0" y="430" width="1440" height="90" fill="#0d2038"/>
+        <g opacity=".3" fill="#7db3e8">
+          <rect x="90" y="448" width="180" height="2.5" rx="1.2"/><rect x="420" y="466" width="260" height="2.5" rx="1.2"/>
+          <rect x="820" y="452" width="150" height="2.5" rx="1.2"/><rect x="1130" y="470" width="220" height="2.5" rx="1.2"/>
+        </g>
+        <rect x="950" y="444" width="170" height="3" rx="1.5" fill="#f4c98a" opacity=".35"/>
+      </svg>
       <img class="balloon balloon-main" src="remax-balloon-transparent.png" alt="RE/MAX hot air balloon floating over the British Columbia mountains" onerror="this.style.display='none'">
       <img class="balloon balloon-2" src="remax-balloon-transparent.png" alt="" onerror="this.style.display='none'">
     </div>
@@ -539,6 +577,46 @@ section{scroll-margin-top:90px}
     </div>
   </div>
 
+  <!-- RedNote featured (social proof) -->
+  <div class="sec soft">
+    <div class="container">
+      <div class="sec-head reveal">
+        <p class="eyebrow">小红书 · RedNote</p>
+        <h2 data-en="Straight talk, straight from my RedNote" data-zh="大实话，都写在我的小红书里">Straight talk, straight from my RedNote</h2>
+        <p data-en="Neighbourhood deep-dives, honest budget breakdowns and real relocation stories — this is how I talk to buyers every day." data-zh="社区深度分析、真实预算拆解、跨省搬家的亲身故事——这就是我每天和买家聊的内容。">Neighbourhood deep-dives, honest budget breakdowns and real relocation stories — this is how I talk to buyers every day.</p>
+      </div>
+      <div class="grid-notes">
+        <a class="note-card reveal" href="http://xhslink.com/m/8G7nNZt5Fk8" target="_blank" rel="noopener">
+          <div class="note-img"><img src="note5.jpg" alt="南素里买房大实话" loading="lazy"></div>
+          <div class="note-body">
+            <p class="note-tag" data-en="RedNote Post" data-zh="小红书笔记">小红书笔记</p>
+            <h3>南素里买房大实话‼️</h3>
+            <p class="note-desc">点击查看详情 →</p>
+          </div>
+        </a>
+        <a class="note-card reveal d1" href="http://xhslink.com/m/9i7ZQHVQCXS" target="_blank" rel="noopener">
+          <div class="note-img"><img src="note6.jpg" alt="预算90万左右兰里Langley联排买房大实话" loading="lazy"></div>
+          <div class="note-body">
+            <p class="note-tag" data-en="RedNote Post" data-zh="小红书笔记">小红书笔记</p>
+            <h3>预算90万左右，兰里Langley联排买房大实话</h3>
+            <p class="note-desc">点击查看详情 →</p>
+          </div>
+        </a>
+        <a class="note-card reveal d2" href="http://xhslink.com/m/23biCXIJuMB" target="_blank" rel="noopener">
+          <div class="note-img"><img src="note3.jpg" alt="大温周边价值洼地 菲莎河谷Mission BC" loading="lazy"></div>
+          <div class="note-body">
+            <p class="note-tag" data-en="RedNote Post" data-zh="小红书笔记">小红书笔记</p>
+            <h3>大温周边价值洼地｜菲莎河谷Mission，BC</h3>
+            <p class="note-desc">点击查看详情 →</p>
+          </div>
+        </a>
+      </div>
+      <div style="text-align:center;margin-top:40px" class="reveal">
+        <a href="#notes" class="btn btn-blue" data-en="See All Posts" data-zh="查看全部笔记">See All Posts</a>
+      </div>
+    </div>
+  </div>
+
   <!-- final CTA -->
   <div class="sec">
     <div class="container">
@@ -577,10 +655,15 @@ section{scroll-margin-top:90px}
           <div class="ribbon"><svg class="b" viewBox="0 0 200 260"><use href="#remax-balloon"/></svg><div><strong>Phoebe Xiang</strong><span data-en="RE/MAX Realtor® · Richmond, BC" data-zh="RE/MAX 持牌经纪® · 列治文">RE/MAX Realtor® · Richmond, BC</span></div></div>
         </div>
         <div class="reveal d1">
-          <p class="eyebrow">RE/MAX Crest Realty</p>
-          <h2 data-en="Phoebe Xiang – Real Estate in Greater Vancouver &amp; Fraser Valley" data-zh="Phoebe Xiang 大温及菲沙河谷地产">Phoebe Xiang – Real Estate in Greater Vancouver &amp; Fraser Valley</h2>
-          <p data-en="Sincere service helping you find your home 🇨🇦" data-zh="真诚服务，助你安家 🇨🇦">Sincere service helping you find your home 🇨🇦</p>
-          <p data-en="Since 2013 | Toronto · Calgary · Greater Vancouver" data-zh="Since 2013 多伦多 · 卡尔加里 · 大温">Since 2013 | Toronto · Calgary · Greater Vancouver</p>
+          <p class="eyebrow" data-en="My Story" data-zh="我的故事">My Story</p>
+          <h2 data-en="I've made the big move myself — three times" data-zh="跨省搬家，我自己亲身经历过——三次">I've made the big move myself — three times</h2>
+          <p data-en="Since 2013 my family has lived in Toronto, then Calgary, and finally settled in Greater Vancouver. I know exactly what it feels like to choose a city, a neighbourhood and a home from far away — because I've done it, kids and boxes and all." data-zh="2013 年至今，我们一家先后在多伦多、卡尔加里生活，最终定居大温。选城市、选社区、隔着千里挑房子是什么感受，我最清楚——因为我带着家人和行李，真真切切经历过。">Since 2013 my family has lived in Toronto, then Calgary, and finally settled in Greater Vancouver. I know exactly what it feels like to choose a city, a neighbourhood and a home from far away — because I've done it, kids and boxes and all.</p>
+          <p data-en="That's why I specialize in helping new home buyers, cross-province movers and international buyers — in 中文 or English, from the first call to the day you get your keys." data-zh="所以我专注于服务首次购房者、跨省搬迁家庭与海外买家——中英双语，从第一通电话陪伴到拿钥匙那天。">That's why I specialize in helping new home buyers, cross-province movers and international buyers — in 中文 or English, from the first call to the day you get your keys.</p>
+          <div class="stats">
+            <div><div class="n">3</div><div class="l" data-en="Canadian cities called home" data-zh="亲身生活过的加拿大城市">Canadian cities called home</div></div>
+            <div><div class="n">2013</div><div class="l" data-en="In Canada since" data-zh="来到加拿大的年份">In Canada since</div></div>
+            <div><div class="n">中 · EN</div><div class="l" data-en="Fully bilingual service" data-zh="全程双语服务">Fully bilingual service</div></div>
+          </div>
         </div>
       </div>
     </div>
@@ -662,10 +745,13 @@ section{scroll-margin-top:90px}
         <h2 data-en="A simple, four-step path to your keys" data-zh="四步轻松拿到您的钥匙">A simple, four-step path to your keys</h2>
       </div>
       <div class="steps">
+        <svg class="journey-path" viewBox="0 0 1200 110" preserveAspectRatio="none" aria-hidden="true">
+          <path d="M40 100 C340 96 620 70 900 34 C1010 20 1100 12 1170 8" fill="none" stroke="#003DA5" stroke-opacity=".28" stroke-width="2.5" stroke-dasharray="2 9" stroke-linecap="round"/>
+        </svg>
         <div class="step reveal"><div class="num">1</div><h3 data-en="Free Consultation" data-zh="免费咨询">Free Consultation</h3><p data-en="We talk goals, budget and timeline — in 中文 or English — and map out a clear plan." data-zh="我们以中文或英文沟通目标、预算与时间，并规划清晰方案。">We talk goals, budget and timeline — in 中文 or English — and map out a clear plan.</p></div>
         <div class="step reveal d1"><div class="num">2</div><h3 data-en="Strategy &amp; Search" data-zh="策略与寻房">Strategy &amp; Search</h3><p data-en="Pre-approval connections plus a curated shortlist of homes that truly fit you — in person or virtually." data-zh="对接贷款预批，并为您精选真正合适的房源——线下或线上看房。">Pre-approval connections plus a curated shortlist of homes that truly fit you — in person or virtually.</p></div>
         <div class="step reveal d2"><div class="num">3</div><h3 data-en="Offer &amp; Negotiate" data-zh="出价与谈判">Offer &amp; Negotiate</h3><p data-en="Smart, data-backed offers and firm negotiation to protect your budget and your interests." data-zh="以数据支持的明智出价与坚定谈判，守护您的预算与利益。">Smart, data-backed offers and firm negotiation to protect your budget and your interests.</p></div>
-        <div class="step reveal d3"><div class="num">4</div><h3 data-en="Close &amp; Celebrate" data-zh="成交与庆祝">Close &amp; Celebrate</h3><p data-en="Inspections, paperwork and legal contacts handled — then the keys to your new BC home." data-zh="验房、文件与律师对接全部办妥——然后交付您 BC 新家的钥匙。">Inspections, paperwork and legal contacts handled — then the keys to your new BC home.</p></div>
+        <div class="step reveal d3"><svg class="step-balloon" viewBox="0 0 200 260" aria-hidden="true"><use href="#remax-balloon"/></svg><div class="num">4</div><h3 data-en="Close &amp; Celebrate" data-zh="成交与庆祝">Close &amp; Celebrate</h3><p data-en="Inspections, paperwork and legal contacts handled — then the keys to your new BC home." data-zh="验房、文件与律师对接全部办妥——然后交付您 BC 新家的钥匙。">Inspections, paperwork and legal contacts handled — then the keys to your new BC home.</p></div>
       </div>
     </div>
   </div>
