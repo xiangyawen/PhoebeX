@@ -1196,7 +1196,7 @@ function applyLang(l){
 }
 function toggleLang(){
   if(lang==='en'){ window.location.href='zh/'; return; }
-  applyLang('en');
+  window.location.href='./';
 }
 
 /* ---------- FAQ ---------- */
@@ -1238,7 +1238,8 @@ document.getElementById('yr').textContent=new Date().getFullYear();
 (function init(){
   const id=location.hash.slice(1);
   go(pages.includes(id)?id:'home', false);
-  applyLang(lang);
+  const requestedLang = new URLSearchParams(location.search).get('lang');
+  applyLang(requestedLang==='zh' ? 'zh' : 'en');
 })();
 </script>
 </body>
