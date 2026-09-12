@@ -1182,6 +1182,9 @@ let lang='en';
 function applyLang(l){
   lang=l;
   document.documentElement.lang = (l==='zh')?'zh-CN':'en';
+  document.title = (l==='zh')
+    ? '温哥华及菲沙河谷中文地产经纪 | Phoebe Xiang RE/MAX'
+    : 'Vancouver & Fraser Valley Realtor | Chinese & English Home Buying | Phoebe Xiang';
   document.querySelectorAll('[data-en]').forEach(el=>{
     const t=el.getAttribute('data-'+l);
     if(t!==null){
@@ -1196,7 +1199,7 @@ function applyLang(l){
 }
 function toggleLang(){
   if(lang==='en'){ window.location.href='zh/'; return; }
-  window.location.href='./';
+  window.location.href='/';
 }
 
 /* ---------- FAQ ---------- */
