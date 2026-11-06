@@ -99,4 +99,32 @@
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.phoebexrealestate.ca/zh/guides/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.phoebexrealestate.ca/guides/"/>
   </url>
+  <url>
+    <loc>https://www.phoebexrealestate.ca/areas/maple-ridge/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.phoebexrealestate.ca/areas/maple-ridge/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.phoebexrealestate.ca/zh/areas/maple-ridge/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.phoebexrealestate.ca/areas/maple-ridge/"/>
+  </url>
+  <url>
+    <loc>https://www.phoebexrealestate.ca/zh/areas/maple-ridge/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.phoebexrealestate.ca/areas/maple-ridge/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.phoebexrealestate.ca/zh/areas/maple-ridge/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.phoebexrealestate.ca/areas/maple-ridge/"/>
+  </url>
+  <url>
+    <loc>https://www.phoebexrealestate.ca/areas/south-surrey/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.phoebexrealestate.ca/areas/south-surrey/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.phoebexrealestate.ca/zh/areas/south-surrey/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.phoebexrealestate.ca/areas/south-surrey/"/>
+  </url>
+  <url>
+    <loc>https://www.phoebexrealestate.ca/zh/areas/south-surrey/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.phoebexrealestate.ca/areas/south-surrey/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.phoebexrealestate.ca/zh/areas/south-surrey/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.phoebexrealestate.ca/areas/south-surrey/"/>
+  </url>
 </urlset>

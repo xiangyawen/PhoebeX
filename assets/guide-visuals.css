@@ -1,0 +1,29 @@
+/* Editorial visual summaries. All copy and links remain usable without JS. */
+.guide-visual{display:grid;grid-template-columns:minmax(220px,.85fr) minmax(0,2fr);margin-top:40px;margin-bottom:8px;border:1px solid var(--line);background:var(--warm);border-radius:12px;overflow:hidden}
+.gv-intro{padding:32px;background:var(--navy);color:var(--paper);display:flex;flex-direction:column;justify-content:center;position:relative}
+.gv-kicker{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--paper);margin:0 0 18px;display:flex;align-items:center;gap:10px}
+.gv-kicker:before{content:"";width:24px;height:3px;background:var(--red);flex:none}
+.gv-intro h2{color:var(--paper);font-size:clamp(1.6rem,2.5vw,2.1rem);margin:0 0 14px;line-height:1.25;letter-spacing:-.02em}
+.gv-intro p:last-child{font-size:14px;line-height:1.65;margin:0;color:var(--paper)}
+.gv-steps{list-style:none;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));margin:0;padding:28px 16px;gap:0;align-items:stretch}
+.gv-step{position:relative;min-width:0;margin:0;padding:0 12px}
+.gv-step+.gv-step{border-left:1px solid var(--line)}
+.gv-link{display:flex;flex-direction:column;height:100%;text-decoration:none;padding:8px;border-radius:6px;transition:background .2s ease-out}
+.gv-link:hover{background:var(--paper);color:var(--navy)}
+.gv-number{font-size:12px;letter-spacing:.08em;color:var(--muted);margin-bottom:6px}
+.gv-art{width:100%;max-width:160px;height:110px;display:block;margin:4px auto 16px;color:var(--navy);overflow:visible}
+.gv-art .accent{color:var(--red)}
+.gv-label{font-size:17px;line-height:1.4;color:var(--navy);font-weight:700;display:flex;align-items:center;justify-content:space-between;gap:6px;margin-bottom:8px}
+.gv-label:after{content:"↗";color:var(--red);font-size:18px;font-weight:400}
+.gv-detail{font-size:14px;line-height:1.6;color:var(--muted)}
+.guide-card-art{height:120px;background:var(--warm);margin:-22px -22px 22px;display:flex;align-items:center;justify-content:center;border-bottom:1px solid var(--line);overflow:hidden}
+.guide-card-art .gv-art{width:160px;height:100px;margin:0}
+.card:has(.guide-card-art){border-radius:8px;overflow:hidden}
+.guide-visual.is-in-view .gv-art .gv-draw{stroke-dasharray:1;animation:gv-draw 1s cubic-bezier(.22,1,.36,1) both;animation-delay:var(--gv-delay,0s)}
+.guide-visual.is-in-view .gv-art .gv-focus{transform-box:fill-box;transform-origin:center;animation:gv-arrive .65s cubic-bezier(.22,1,.36,1) both;animation-delay:var(--gv-delay,0s)}
+.gv-step:nth-child(2){--gv-delay:.18s}.gv-step:nth-child(3){--gv-delay:.36s}
+@keyframes gv-draw{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@keyframes gv-arrive{from{transform:translateY(7px) scale(.96);opacity:.35}to{transform:translateY(0) scale(1);opacity:1}}
+@media(max-width:1000px){.guide-visual{grid-template-columns:1fr}.gv-intro{padding:26px 30px}.gv-intro h2{max-width:32ch}.gv-intro p:last-child{max-width:65ch}}
+@media(max-width:600px){.guide-visual{margin-top:26px}.gv-intro{padding:25px 24px}.gv-kicker{margin-bottom:12px}.gv-steps{grid-template-columns:1fr;padding:10px 16px}.gv-step{padding:0}.gv-step+.gv-step{border-left:0;border-top:1px solid var(--line)}.gv-link{position:relative;min-height:124px;display:grid;grid-template-columns:84px minmax(0,1fr);column-gap:16px;align-content:center;padding:20px 6px}.gv-number{position:absolute;top:11px;left:6px;margin:0;font-size:10px}.gv-art{grid-row:1/3;grid-column:1;width:84px;height:76px;margin:0;align-self:center}.gv-label{grid-column:2;font-size:17px;margin:0 0 6px}.gv-detail{grid-column:2;font-size:14px}.guide-card-art{height:110px}}
+@media(prefers-reduced-motion:reduce){.guide-visual .gv-art .gv-draw,.guide-visual .gv-art .gv-focus{animation:none!important}.gv-link{transition:none}}

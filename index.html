@@ -41,13 +41,25 @@
   "@type": "RealEstateAgent",
   "@id": "https://www.phoebexrealestate.ca/#agent",
   "name": "Phoebe Xiang",
-  "description": "Phoebe Xiang is a bilingual RE/MAX REALTOR® helping buyers compare homes, neighbourhoods and offers across Greater Vancouver and the Fraser Valley. She supports first-time buyers, people relocating to BC and home sellers in Chinese and English.",
+  "description": "Chinese and English home buying and selling guidance with Phoebe Xiang of RE/MAX Crest Realty, helping Greater Vancouver and Fraser Valley clients compare homes, neighbourhoods, recent sales and transaction steps.",
   "image": "https://www.phoebexrealestate.ca/phoebe-headshot.jpg",
   "telephone": "+1-604-782-6896",
   "email": "xiangyawen0628@gmail.com",
   "url": "https://www.phoebexrealestate.ca/",
-  "knowsLanguage": ["en", "zh"],
-  "areaServed": ["Greater Vancouver, BC", "Fraser Valley, BC", "Vancouver, BC", "Richmond, BC", "Surrey, BC", "Langley, BC", "Abbotsford, BC", "Mission, BC"],
+  "knowsLanguage": [
+    "en",
+    "zh"
+  ],
+  "areaServed": [
+    "Greater Vancouver, BC",
+    "Fraser Valley, BC",
+    "Vancouver, BC",
+    "Richmond, BC",
+    "Surrey, BC",
+    "Langley, BC",
+    "Abbotsford, BC",
+    "Mission, BC"
+  ],
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "3631 Number 3 Rd #290",
@@ -69,10 +81,34 @@
     "@type": "OfferCatalog",
     "name": "Greater Vancouver and Fraser Valley real estate services",
     "itemListElement": [
-      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Home buying guidance for Greater Vancouver and Fraser Valley buyers"}},
-      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "First-time home buyer guidance in Chinese and English"}},
-      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Cross-province relocation support for buyers moving to BC"}},
-      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Home selling strategy and marketing"}}
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Home buying guidance for Greater Vancouver and Fraser Valley buyers"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "First-time home buyer guidance in Chinese and English"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Cross-province relocation support for buyers moving to BC"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Home selling strategy and marketing"
+        }
+      }
     ]
   },
   "sameAs": [
@@ -90,7 +126,7 @@
       "name": "How do you help me choose the right home in Greater Vancouver or the Fraser Valley?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "We start with your budget, lifestyle, commute, family plans and timing. Then Phoebe helps you compare neighbourhoods, home types, strata documents, recent sales and resale potential, so your shortlist is based on what fits you — not just what looks good online."
+        "text": "We start with your budget, daily routine and timing. I help you compare areas, home types, strata documents and recent sales, then choose which homes are worth viewing."
       }
     },
     {
@@ -98,7 +134,7 @@
       "name": "Can you assist foreign or international buyers?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes. I provide fully bilingual guidance through BC's taxes, foreign-buyer rules, financing options and timelines, and connect you with mortgage and legal professionals experienced with international clients."
+        "text": "First, confirm whether you can purchase under the rules that apply to you. I can help with the home search and connect you with legal, tax and lending professionals for questions within their expertise."
       }
     },
     {
@@ -114,7 +150,7 @@
       "name": "Do you offer service in Chinese?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes — full service in both Mandarin and English. Every document, condition and number is explained in the language you're most comfortable with."
+        "text": "Yes. I offer service in Mandarin and English. We can discuss the search and documents in the language you prefer. For specialist questions, I will help you find the appropriate professional."
       }
     },
     {
@@ -122,7 +158,7 @@
       "name": "How are your fees structured?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "For buyers, my services are typically at no direct cost to you, as commission is usually paid by the seller. For sellers, I'll walk you through commission clearly before you list — no surprises. Let's discuss your specifics on a free call."
+        "text": "The initial consultation is free. Before you agree to representation, I will explain the services, commission arrangements and costs you may need to pay. Payment depends on the agreement and transaction, so buyer services should not be assumed to be free."
       }
     }
   ]
@@ -567,8 +603,7 @@ body{background:var(--paper)}
         <li><a href="#about" class="nlink" data-en="About" data-zh="关于">About</a></li>
         <li><a href="#services" class="nlink" data-en="Services" data-zh="服务">Services</a></li>
         <li><a href="#notes" class="nlink" data-en="RedNote" data-zh="小红书">RedNote</a></li>
-        <li><a href="/areas/mission/" data-en="Mission Guide" data-zh="Mission 指南">Mission Guide</a></li>
-        <li><a href="/guides/" data-en="Guides" data-zh="买房指南">Guides</a></li>
+        <li><a href="/guides/" data-en="Buying Guides" data-zh="买房指南">Buying Guides</a></li>
         <li><a href="#reviews" class="nlink" onclick="event.preventDefault();go('home');setTimeout(()=>document.getElementById('reviews').scrollIntoView({behavior:'smooth'}),80)" data-en="Reviews" data-zh="客户评价">Reviews</a></li>
         <li><a href="#contact" class="nlink" data-en="Contact" data-zh="联系">Contact</a></li>
       </ul>
@@ -624,7 +659,7 @@ body{background:var(--paper)}
     <div class="container hero-inner">
       <span class="hero-badge"><span class="dot"></span><span data-en="VANCOUVER &amp; FRASER VALLEY REALTOR® · CHINESE &amp; ENGLISH" data-zh="大温及菲沙河谷地产经纪 · 中英双语">VANCOUVER &amp; FRASER VALLEY REALTOR® · CHINESE &amp; ENGLISH</span></span>
       <h1 data-en="Find the <em>right home</em> in Greater Vancouver." data-zh="在大温，筛选到<br>最适合您的<strong>家。</strong>" data-en-html="true">Find the <em>right home</em> in Greater Vancouver.</h1>
-      <p class="sub" data-en="Phoebe Xiang helps buyers compare homes, neighbourhoods and offers across Greater Vancouver and the Fraser Valley — with clear Chinese and English guidance." data-zh="Phoebe Xiang 为大温及菲沙河谷买家筛选和比较房屋、社区与出价方案，提供清晰可靠的中英双语地产服务。">Phoebe Xiang helps buyers compare homes, neighbourhoods and offers across Greater Vancouver and the Fraser Valley — with clear Chinese and English guidance.</p>
+      <p class="sub" data-en="I’m Phoebe Xiang. I help you compare homes, neighbourhoods and offer options across Greater Vancouver and the Fraser Valley, with clear guidance in Chinese and English." data-zh="我是 Phoebe Xiang，以中文和英文陪您比较大温及菲沙河谷的房屋、社区与出价选择，让每一步更有方向。">I’m Phoebe Xiang. I help you compare homes, neighbourhoods and offer options across Greater Vancouver and the Fraser Valley, with clear guidance in Chinese and English.</p>
     </div>
   </div>
 
@@ -644,12 +679,12 @@ body{background:var(--paper)}
       <div class="why-copy reveal">
         <p class="eyebrow" data-en="Why Phoebe" data-zh="为何选择 Phoebe">Why Phoebe</p>
         <h2 data-en="The right home starts with the right shortlist." data-zh="选对房子，先从筛选开始。">The right home starts with the right shortlist.</h2>
-        <p data-en="Buying in Greater Vancouver or the Fraser Valley can feel overwhelming. I help you compare neighbourhoods, home types, strata details, commute and resale potential so the homes you view truly fit your budget, family and next chapter." data-zh="在大温或菲沙河谷买房，选择很多也容易迷茫。我会陪您比较社区、房型、分层物业文件、通勤与转售潜力，筛选出真正符合预算、家庭需要与未来计划的房屋。">Buying in Greater Vancouver or the Fraser Valley can feel overwhelming. I help you compare neighbourhoods, home types, strata details, commute and resale potential so the homes you view truly fit your budget, family and next chapter.</p>
+        <p data-en="A good search starts with what matters to you. I help you compare neighbourhoods, home types, strata documents, travel and recent sales so you can spend your viewing time on homes that fit your priorities." data-zh="选屋先从您的需要开始。我会陪您比较社区、房型、物业文件、出行与近期成交，把时间留给更符合预算和生活安排的房屋。">A good search starts with what matters to you. I help you compare neighbourhoods, home types, strata documents, travel and recent sales so you can spend your viewing time on homes that fit your priorities.</p>
         <p class="signature">Phoebe Xiang</p>
         <div class="why-points">
           <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 11l9-8 9 8"/><path d="M5 10v10h14V10"/></svg><span data-en="Local market knowledge" data-zh="深耕本地市场">Local market knowledge</span></div>
-          <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M12 3c2.5 2.5 2.5 15 0 18"/><circle cx="12" cy="12" r="9"/></svg><span data-en="Bilingual & culturally aware" data-zh="中英双语 · 贴心理解">Bilingual & culturally aware</span></div>
-          <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 6-9 12-9 12s-9-6-9-12a9 9 0 0118 0z"/></svg><span data-en="With you from start to finish" data-zh="从开始到成交，全程相伴">With you from start to finish</span></div>
+          <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M12 3c2.5 2.5 2.5 15 0 18"/><circle cx="12" cy="12" r="9"/></svg><span data-en="Bilingual & culturally aware" data-zh="中英双语 · 贴心理解">Bilingual &amp; culturally aware</span></div>
+          <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 6-9 12-9 12s-9-6-9-12a9 9 0 0118 0z"/></svg><span data-en="With you from start to finish" data-zh="从计划到交屋，一起看清每一步">With you from start to finish</span></div>
         </div>
       </div>
       <div class="why-gallery reveal d1" aria-label="Phoebe Xiang">
@@ -680,13 +715,13 @@ body{background:var(--paper)}
         <div class="svc reveal d1">
           <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 21V8l7-5 7 5v13"/><path d="M9 21v-6h6v6"/><path d="M15 3v4"/></svg></div>
           <h3 data-en="Cross-Province Buyers" data-zh="跨省购房买家">Cross-Province Buyers</h3>
-          <p data-en="Moving to BC from another province? Virtual tours, remote paperwork and relocation know-how make a long-distance move simple." data-zh="从外省搬来 BC？线上看房、远程文件与搬迁经验，让长途置业变得简单。">Moving to BC from another province? Virtual tours, remote paperwork and relocation know-how make a long-distance move simple.</p>
+          <p data-en="Moving to BC from another province? Plan your area visits, viewings and paperwork early, with support for the steps you need to manage from a distance." data-zh="从外省搬来 BC？提早安排地区走访、看房与文件步骤，也为需要远程处理的事情做好准备。">Moving to BC from another province? Plan your area visits, viewings and paperwork early, with support for the steps you need to manage from a distance.</p>
           <a class="more" href="#services" data-en="Learn more →" data-zh="了解更多 →">Learn more →</a>
         </div>
         <div class="svc reveal d2">
           <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.6 2.7 2.6 15.3 0 18M12 3c-2.6 2.7-2.6 15.3 0 18"/></svg></div>
-          <h3 data-en="Foreign &amp; International Buyers" data-zh="海外及国际买家">Foreign &amp; International Buyers</h3>
-          <p data-en="Bilingual guidance through BC taxes, financing options and timelines so overseas buyers invest with full clarity." data-zh="以双语指导您了解 BC 税务、融资方案与时间安排，让海外买家清晰安心地投资。">Bilingual guidance through BC taxes, financing options and timelines so overseas buyers invest with full clarity.</p>
+          <h3 data-en="Buying from Overseas" data-zh="海外置业准备">Buying from Overseas</h3>
+          <p data-en="Start by confirming purchase eligibility and current requirements with the appropriate professionals. Then plan financing, timing and the home search around your circumstances." data-zh="先与相关专业人士核对购买资格及现行要求，再按自身情况安排贷款、时间与选屋计划。">Start by confirming purchase eligibility and current requirements with the appropriate professionals. Then plan financing, timing and the home search around your circumstances.</p>
           <a class="more" href="#services" data-en="Learn more →" data-zh="了解更多 →">Learn more →</a>
         </div>
       </div>
@@ -731,13 +766,13 @@ body{background:var(--paper)}
       <div class="sec-head reveal">
         <p class="eyebrow">小红书 · RedNote</p>
         <h2 data-en="Straight talk, straight from my RedNote" data-zh="大实话，都写在我的小红书里">Straight talk, straight from my RedNote</h2>
-        <p data-en="Neighbourhood deep-dives, honest budget breakdowns and real relocation stories — this is how I talk to buyers every day." data-zh="社区深度分析、真实预算拆解、跨省搬家的亲身故事——这就是我每天和买家聊的内容。">Neighbourhood deep-dives, honest budget breakdowns and real relocation stories — this is how I talk to buyers every day.</p>
+        <p data-en="Explore neighbourhood comparisons, practical budget questions and my family’s relocation experiences. Start with the topics that matter to your next move." data-zh="社区怎么选、预算怎么看、跨省搬家有什么感受？从您关心的话题开始，了解选屋与生活中的实际取舍。">Explore neighbourhood comparisons, practical budget questions and my family’s relocation experiences. Start with the topics that matter to your next move.</p>
       </div>
       <div class="grid-notes">
         <a class="note-card reveal" href="http://xhslink.com/m/8G7nNZt5Fk8" target="_blank" rel="noopener">
           <div class="note-img"><img src="note5.jpg" alt="南素里买房大实话" width="900" height="1145" loading="lazy"></div>
           <div class="note-body">
-            <p class="note-tag" data-en="RedNote Post" data-zh="小红书笔记">小红书笔记</p>
+            <p class="note-tag" data-en="RedNote Post" data-zh="小红书笔记">RedNote Post</p>
             <h3>南素里买房大实话‼️</h3>
             <p class="note-desc">点击查看详情 →</p>
           </div>
@@ -745,7 +780,7 @@ body{background:var(--paper)}
         <a class="note-card reveal d1" href="http://xhslink.com/m/9i7ZQHVQCXS" target="_blank" rel="noopener">
           <div class="note-img"><img src="note6.jpg" alt="预算90万左右兰里Langley联排买房大实话" width="900" height="1500" loading="lazy"></div>
           <div class="note-body">
-            <p class="note-tag" data-en="RedNote Post" data-zh="小红书笔记">小红书笔记</p>
+            <p class="note-tag" data-en="RedNote Post" data-zh="小红书笔记">RedNote Post</p>
             <h3>预算90万左右，兰里Langley联排买房大实话</h3>
             <p class="note-desc">点击查看详情 →</p>
           </div>
@@ -753,7 +788,7 @@ body{background:var(--paper)}
         <a class="note-card reveal d2" href="http://xhslink.com/m/23biCXIJuMB" target="_blank" rel="noopener">
           <div class="note-img"><img src="note3.jpg" alt="大温周边价值洼地 菲莎河谷Mission BC" width="900" height="1200" loading="lazy"></div>
           <div class="note-body">
-            <p class="note-tag" data-en="RedNote Post" data-zh="小红书笔记">小红书笔记</p>
+            <p class="note-tag" data-en="RedNote Post" data-zh="小红书笔记">RedNote Post</p>
             <h3>大温周边价值洼地｜菲莎河谷Mission，BC</h3>
             <p class="note-desc">点击查看详情 →</p>
           </div>
@@ -770,7 +805,7 @@ body{background:var(--paper)}
     <div class="container">
       <div class="cta-band reveal">
         <h2 data-en="Ready to make your move in BC?" data-zh="准备好在 BC 开启您的置业之旅了吗？">Ready to make your move in BC?</h2>
-        <p data-en="Book a free, no-pressure consultation. Let's talk about your goals, your timeline and the right neighbourhoods for you." data-zh="预约一次免费、无压力的咨询。让我们聊聊您的目标、时间安排，以及最适合您的社区。">Book a free, no-pressure consultation. Let's talk about your goals, your timeline and the right neighbourhoods for you.</p>
+        <p data-en="Book a free consultation to discuss your budget, timing and everyday needs. We can work out a useful starting point without pressure to make a purchase." data-zh="预约免费咨询，聊聊预算、时间安排与日常需要。先找出值得了解的方向，不用急着作购买决定。">Book a free consultation to discuss your budget, timing and everyday needs. We can work out a useful starting point without pressure to make a purchase.</p>
         <div class="hero-cta">
           <a href="#contact" class="btn btn-primary btn-lg" data-en="Schedule an Appointment" data-zh="预约会面">Schedule an Appointment</a>
           <a href="tel:+16047826896" class="btn btn-ghost btn-lg" data-en="Call +1 (604) 782-6896" data-zh="致电 +1 (604) 782-6896">Call +1 (604) 782-6896</a>
@@ -804,9 +839,9 @@ body{background:var(--paper)}
         </div>
         <div class="reveal d1">
           <p class="eyebrow" data-en="My Story" data-zh="我的故事">My Story</p>
-          <h2 data-en="I've made the big move myself — three times" data-zh="跨省搬家，我自己亲身经历过——三次">I've made the big move myself — three times</h2>
-          <p data-en="Since 2013 my family has lived in Toronto, then Calgary, and finally settled in Greater Vancouver. I know exactly what it feels like to choose a city, a neighbourhood and a home from far away — because I've done it, kids and boxes and all." data-zh="2013 年至今，我们一家先后在多伦多、卡尔加里生活，最终定居大温。选城市、选社区、隔着千里挑房子是什么感受，我最清楚——因为我带着家人和行李，真真切切经历过。">Since 2013 my family has lived in Toronto, then Calgary, and finally settled in Greater Vancouver. I know exactly what it feels like to choose a city, a neighbourhood and a home from far away — because I've done it, kids and boxes and all.</p>
-          <p data-en="That's why I specialize in helping new home buyers, cross-province movers and international buyers — in 中文 or English, from the first call to the day you get your keys." data-zh="所以我专注于服务首次购房者、跨省搬迁家庭与海外买家——中英双语，从第一通电话陪伴到拿钥匙那天。">That's why I specialize in helping new home buyers, cross-province movers and international buyers — in 中文 or English, from the first call to the day you get your keys.</p>
+          <h2 data-en="I know what it takes to start again in a new city" data-zh="换一座城市生活，我也亲身经历过">I know what it takes to start again in a new city</h2>
+          <p data-en="Since 2013, my family has lived in Toronto, Calgary and Greater Vancouver. Moving with a family taught me to look beyond a house: the daily routes, the neighbourhood and the practical work of settling in matter too." data-zh="2013 年至今，我们一家先后在多伦多、卡尔加里和大温生活。带着家人搬迁，让我体会到：除了房子本身，日常路线、社区和安顿下来的每件小事都很重要。">Since 2013, my family has lived in Toronto, Calgary and Greater Vancouver. Moving with a family taught me to look beyond a house: the daily routes, the neighbourhood and the practical work of settling in matter too.</p>
+          <p data-en="I use that experience when helping you buy your first home or move to BC. We can talk through the choices in Chinese or English, from your first questions to getting the keys." data-zh="无论您第一次买房，还是准备搬来 BC，我都会把这份搬迁体验带进选屋过程。从开始提问到交屋，我们可以用中文或英文把事情谈清楚。">I use that experience when helping you buy your first home or move to BC. We can talk through the choices in Chinese or English, from your first questions to getting the keys.</p>
           <div class="stats">
             <div><div class="n">3</div><div class="l" data-en="Canadian cities called home" data-zh="亲身生活过的加拿大城市">Canadian cities called home</div></div>
             <div><div class="n">2013</div><div class="l" data-en="In Canada since" data-zh="来到加拿大的年份">In Canada since</div></div>
@@ -823,7 +858,7 @@ body{background:var(--paper)}
         <div class="benefit reveal">
           <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
           <h3 data-en="My Mission" data-zh="我的使命">My Mission</h3>
-          <p data-en="To make real estate clear and accessible for every buyer and seller — regardless of language or where they're moving from — and to protect their interests like family." data-zh="让房地产对每位买家和卖家都清晰易懂——无论语言或来自何方——并像对待家人一样维护他们的利益。">To make real estate clear and accessible for every buyer and seller — regardless of language or where they're moving from — and to protect their interests like family.</p>
+          <p data-en="To help you understand the choices before you commit. I explain the steps, compare the options with you and respect your decision." data-zh="决定之前，先把选择看清楚。我会解释买卖步骤，陪您比较不同方案，也尊重您最后的决定。">To help you understand the choices before you commit. I explain the steps, compare the options with you and respect your decision.</p>
         </div>
         <div class="benefit reveal d1">
           <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l2.4 4.9 5.4.8-3.9 3.8.9 5.4L12 19.3 7.2 17l.9-5.4L4.2 7.7l5.4-.8z"/></svg></div>
@@ -833,7 +868,7 @@ body{background:var(--paper)}
         <div class="benefit reveal d2">
           <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H7a4 4 0 00-4 4v2"/><circle cx="10" cy="7" r="4"/><path d="M21 21v-2a4 4 0 00-3-3.9"/></svg></div>
           <h3 data-en="Who I Serve" data-zh="我服务的对象">Who I Serve</h3>
-          <p data-en="New and first-time home buyers, cross-province relocators, and foreign &amp; international buyers who want a knowledgeable, bilingual agent on their side." data-zh="新及首次购房者、跨省搬迁者，以及希望有一位专业双语经纪相伴的海外与国际买家。">New and first-time home buyers, cross-province relocators, and foreign &amp; international buyers who want a knowledgeable, bilingual agent on their side.</p>
+          <p data-en="First-time buyers, people moving to BC and homeowners preparing to sell. If you are buying from overseas, we start with the eligibility and professional advice your circumstances require." data-zh="首次买房、搬来 BC，以及准备卖房的业主。如从海外置业，会先按您的情况确认需要核对的资格与专业意见。">First-time buyers, people moving to BC and homeowners preparing to sell. If you are buying from overseas, we start with the eligibility and professional advice your circumstances require.</p>
         </div>
       </div>
     </div>
@@ -843,12 +878,12 @@ body{background:var(--paper)}
     <div class="container">
       <div class="sec-head reveal">
         <p class="eyebrow" data-en="What Makes Me Different" data-zh="我的与众不同">What Makes Me Different</p>
-        <h2 data-en="More than a transaction — a relationship" data-zh="不止是一笔交易——更是一段关系">More than a transaction — a relationship</h2>
+        <h2 data-en="Help you can put to use" data-zh="把问题谈清楚，把事情逐步做好">Help you can put to use</h2>
       </div>
       <div class="grid-3">
-        <div class="svc reveal"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.6 2.7 2.6 15.3 0 18M12 3c-2.6 2.7-2.6 15.3 0 18"/></svg></div><h3 data-en="Truly Bilingual" data-zh="真正的双语服务">Truly Bilingual</h3><p data-en="Every contract, condition and number explained in 中文 or English — your choice, no detail lost in translation." data-zh="每一份合同、条件与数字，都以中文或英文为您讲解——由您选择，绝不因翻译而遗漏细节。">Every contract, condition and number explained in 中文 or English — your choice, no detail lost in translation.</p></div>
-        <div class="svc reveal d1"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 11l9-8 9 8"/><path d="M5 10v10h14V10"/></svg></div><h3 data-en="Relocation Specialist" data-zh="搬迁置业专家">Relocation Specialist</h3><p data-en="Remote-friendly process built for cross-province and overseas buyers: virtual tours, e-signing and trusted local referrals." data-zh="为跨省及海外买家打造的远程友好流程：线上看房、电子签约与可靠的本地转介。">Remote-friendly process built for cross-province and overseas buyers: virtual tours, e-signing and trusted local referrals.</p></div>
-        <div class="svc reveal d2"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg></div><h3 data-en="Always Responsive" data-zh="随时响应">Always Responsive</h3><p data-en="Quick replies by phone, email or RedNote — you're never left wondering what happens next." data-zh="电话、邮件或小红书都能快速回复——您永远不会对下一步感到迷茫。">Quick replies by phone, email or 小红书 — you're never left wondering what happens next.</p></div>
+        <div class="svc reveal"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.6 2.7 2.6 15.3 0 18M12 3c-2.6 2.7-2.6 15.3 0 18"/></svg></div><h3 data-en="Truly Bilingual" data-zh="真正的双语服务">Truly Bilingual</h3><p data-en="Discuss the buying process, documents and questions in Mandarin or English. For legal, tax or lending advice, I can help you connect with the appropriate professionals." data-zh="以普通话或英文讨论买房步骤、文件与疑问。涉及法律、税务或贷款意见时，协助您联系适当的专业人士。">Discuss the buying process, documents and questions in Mandarin or English. For legal, tax or lending advice, I can help you connect with the appropriate professionals.</p></div>
+        <div class="svc reveal d1"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 11l9-8 9 8"/><path d="M5 10v10h14V10"/></svg></div><h3 data-en="Relocation Support" data-zh="搬迁置业协助">Relocation Support</h3><p data-en="Plan virtual viewings, document steps and local appointments around your location and timing. Confirm which parts need an in-person visit before committing." data-zh="按所在地与时间安排线上看房、文件步骤和本地预约，并提早确认哪些事项需要亲身到场。">Plan virtual viewings, document steps and local appointments around your location and timing. Confirm which parts need an in-person visit before committing.</p></div>
+        <div class="svc reveal d2"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg></div><h3 data-en="Clear Communication" data-zh="清晰沟通">Clear Communication</h3><p data-en="Ask questions by phone, email or RedNote. I help you keep track of the next step and the deadlines that matter." data-zh="有问题可以通过电话、电邮或小红书联系我。我们一起看清下一步，以及哪些期限要特别留意。">Ask questions by phone, email or RedNote. I help you keep track of the next step and the deadlines that matter.</p></div>
       </div>
       <div style="text-align:center;margin-top:44px" class="reveal">
         <a href="#contact" class="btn btn-primary btn-lg" data-en="Let's Work Together" data-zh="与我合作">Let's Work Together</a>
@@ -867,7 +902,7 @@ body{background:var(--paper)}
     <div class="container">
       <p class="eyebrow" data-en="Services" data-zh="服务项目">Services</p>
       <h2 data-en="Greater Vancouver &amp; Fraser Valley home buying and selling support" data-zh="大温及菲沙河谷买房、卖房全方位支持">Greater Vancouver &amp; Fraser Valley home buying and selling support</h2>
-      <p data-en="Chinese and English real estate guidance for first-time buyers, families relocating to BC, home sellers and buyers who want a smarter shortlist — not just more listings." data-zh="为首次购房者、搬来 BC 的家庭、卖房业主，以及想要更精准筛选房屋而不只是看更多房源的买家，提供中英双语地产服务。">Chinese and English real estate guidance for first-time buyers, families relocating to BC, home sellers and buyers who want a smarter shortlist — not just more listings.</p>
+      <p data-en="Buying your first home, moving to BC or preparing to sell? I offer Chinese and English guidance to help you compare your options and plan what comes next." data-zh="第一次买房、准备搬来 BC，还是想出售现有房屋？我提供中文和英文服务，陪您比较选择、安排下一步。">Buying your first home, moving to BC or preparing to sell? I offer Chinese and English guidance to help you compare your options and plan what comes next.</p>
     </div>
     <svg class="hero-wave" viewBox="0 0 1440 90" preserveAspectRatio="none" aria-hidden="true"><path d="M0 60 C240 10 480 90 720 60 C960 30 1200 90 1440 50 L1440 90 L0 90 Z" fill="#ffffff"/></svg>
   </div>
@@ -875,12 +910,12 @@ body{background:var(--paper)}
   <div class="sec">
     <div class="container">
       <div class="grid-services">
-        <div class="svc reveal"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 11l9-8 9 8"/><path d="M5 10v10h14V10"/><path d="M9 20v-6h6v6"/></svg></div><h3 data-en="Buying a Home" data-zh="购买房屋">Buying a Home</h3><p data-en="Search strategy, market-smart pricing advice, viewings and skilled negotiation to win the right home at the right price." data-zh="制定搜索策略、提供精准市场定价建议、安排看房并以专业谈判，以合适的价格赢得理想之家。">Search strategy, market-smart pricing advice, viewings and skilled negotiation to win the right home at the right price.</p></div>
+        <div class="svc reveal"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 11l9-8 9 8"/><path d="M5 10v10h14V10"/><path d="M9 20v-6h6v6"/></svg></div><h3 data-en="Buying a Home" data-zh="购买房屋">Buying a Home</h3><p data-en="Define your search, compare recent sales, arrange viewings and discuss offer options, conditions and deadlines before making a decision." data-zh="确定选屋范围、比较近期成交、安排看房，并在决定前讨论出价、购买条件与期限。">Define your search, compare recent sales, arrange viewings and discuss offer options, conditions and deadlines before making a decision.</p></div>
         <div class="svc reveal d1"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18M5 21V7l8-4 8 4v14"/><path d="M9 9h.01M9 13h.01M9 17h.01M15 9h.01M15 13h.01M15 17h.01"/></svg></div><h3 data-en="Selling Your Home" data-zh="出售房屋">Selling Your Home</h3><p data-en="Pricing analysis, staging guidance, professional marketing and exposure across the RE/MAX network and MLS®." data-zh="价格分析、布置建议、专业营销，并通过 RE/MAX 网络与 MLS® 获得广泛曝光。">Pricing analysis, staging guidance, professional marketing and exposure across the RE/MAX network and MLS®.</p></div>
-        <div class="svc reveal d2"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M5 9l7-7 7 7"/></svg></div><h3 data-en="New &amp; First-Time Buyers" data-zh="新及首次购房者">New &amp; First-Time Buyers</h3><p data-en="Patient, jargon-free guidance through pre-approval, incentives, deposits and closing so your first purchase feels easy." data-zh="耐心、无术语的指导，带您了解预批、优惠、订金与成交，让首次购房轻松无忧。">Patient, jargon-free guidance through pre-approval, incentives, deposits and closing so your first purchase feels easy.</p></div>
-        <div class="svc reveal"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="3" width="15" height="13"/><path d="M16 8h4l3 3v5h-7"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg></div><h3 data-en="Cross-Province Relocation" data-zh="跨省搬迁置业">Cross-Province Relocation</h3><p data-en="Virtual tours, remote documents and neighbourhood briefings make moving to BC from anywhere in Canada simple." data-zh="线上看房、远程文件与社区介绍，让您从加拿大任何地方搬来 BC 都轻松简单。">Virtual tours, remote documents and neighbourhood briefings make moving to BC from anywhere in Canada simple.</p></div>
-        <div class="svc reveal d1"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.6 2.7 2.6 15.3 0 18M12 3c-2.6 2.7-2.6 15.3 0 18"/></svg></div><h3 data-en="Foreign &amp; International Buyers" data-zh="海外及国际买家">Foreign &amp; International Buyers</h3><p data-en="Bilingual help navigating BC taxes, the foreign-buyer rules, financing and timelines — invest with total clarity." data-zh="双语协助您了解 BC 税务、海外买家规定、融资与时间安排——清晰透明地投资。">Bilingual help navigating BC taxes, the foreign-buyer rules, financing and timelines — invest with total clarity.</p></div>
-        <div class="svc reveal d2"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3v18h18"/><path d="M7 14l4-4 3 3 5-6"/></svg></div><h3 data-en="Investment Properties" data-zh="投资置业">Investment Properties</h3><p data-en="Rental yield insight, growth-area guidance and portfolio advice for buyers building long-term wealth in BC." data-zh="提供租金回报分析、增值区域建议与组合规划，助您在 BC 建立长期财富。">Rental yield insight, growth-area guidance and portfolio advice for buyers building long-term wealth in BC.</p></div>
+        <div class="svc reveal d2"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M5 9l7-7 7 7"/></svg></div><h3 data-en="New &amp; First-Time Buyers" data-zh="新及首次购房者">New &amp; First-Time Buyers</h3><p data-en="Understand preapproval, deposits, purchase conditions and closing costs one step at a time. Check eligibility before relying on any buyer program." data-zh="逐步了解贷款预批、订金、购买条件与交割费用；涉及购房优惠时，先核对资格，再作预算。">Understand preapproval, deposits, purchase conditions and closing costs one step at a time. Check eligibility before relying on any buyer program.</p></div>
+        <div class="svc reveal"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="3" width="15" height="13"/><path d="M16 8h4l3 3v5h-7"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg></div><h3 data-en="Cross-Province Relocation" data-zh="跨省搬迁置业">Cross-Province Relocation</h3><p data-en="Plan your area research, viewings and document deadlines around the move. Work out early what you can do remotely and when you need to be here." data-zh="按搬家时间安排地区走访、看房和文件期限。哪些可以远程处理、何时需要到场，提早确认。">Plan your area research, viewings and document deadlines around the move. Work out early what you can do remotely and when you need to be here.</p></div>
+        <div class="svc reveal d1"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.6 2.7 2.6 15.3 0 18M12 3c-2.6 2.7-2.6 15.3 0 18"/></svg></div><h3 data-en="Buying from Overseas" data-zh="海外置业准备">Buying from Overseas</h3><p data-en="Before searching, confirm purchase eligibility and the rules that apply to your situation with legal and tax professionals. I can help coordinate the property-search steps once those questions are clear." data-zh="选屋前，先与法律及税务专业人士核对购买资格和适用规定。厘清这些问题后，我再协助安排房屋筛选与相关步骤。">Before searching, confirm purchase eligibility and the rules that apply to your situation with legal and tax professionals. I can help coordinate the property-search steps once those questions are clear.</p></div>
+        <div class="svc reveal d2"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3v18h18"/><path d="M7 14l4-4 3 3 5-6"/></svg></div><h3 data-en="Investment Property Research" data-zh="投资物业比较">Investment Property Research</h3><p data-en="Compare purchase costs, ownership expenses and the proposed use of a property. Confirm rental permissions, financing and tax questions with the relevant professionals; returns are not guaranteed." data-zh="比较买价、持有费用与计划用途，并向相关专业人士核对出租许可、贷款和税务问题；投资回报并无保证。">Compare purchase costs, ownership expenses and the proposed use of a property. Confirm rental permissions, financing and tax questions with the relevant professionals; returns are not guaranteed.</p></div>
       </div>
     </div>
   </div>
@@ -890,16 +925,16 @@ body{background:var(--paper)}
     <div class="container">
       <div class="sec-head reveal">
         <p class="eyebrow" data-en="How It Works" data-zh="服务流程">How It Works</p>
-        <h2 data-en="A simple, four-step path to your keys" data-zh="四步轻松拿到您的钥匙">A simple, four-step path to your keys</h2>
+        <h2 data-en="Four stages, with a clear next step" data-zh="四个阶段，看清下一步">Four stages, with a clear next step</h2>
       </div>
       <div class="steps">
         <svg class="journey-path" viewBox="0 0 1200 110" preserveAspectRatio="none" aria-hidden="true">
           <path d="M40 100 C340 96 620 70 900 34 C1010 20 1100 12 1170 8" fill="none" stroke="#003DA5" stroke-opacity=".28" stroke-width="2.5" stroke-dasharray="2 9" stroke-linecap="round"/>
         </svg>
-        <div class="step reveal"><div class="num">1</div><h3 data-en="Free Buyer Consultation" data-zh="免费买房咨询">Free Buyer Consultation</h3><p data-en="We clarify your goals, budget, timeline and preferred areas — in Chinese or English — then map out a clear buying plan." data-zh="我们以中文或英文厘清您的目标、预算、时间和心仪区域，再一起制定清晰的购房计划。">We clarify your goals, budget, timeline and preferred areas — in Chinese or English — then map out a clear buying plan.</p></div>
-        <div class="step reveal d1"><div class="num">2</div><h3 data-en="Compare &amp; Shortlist Homes" data-zh="比较并筛选房屋">Compare &amp; Shortlist Homes</h3><p data-en="Pre-approval connections plus a curated shortlist. We compare neighbourhoods, home types and practical details before you spend weekends viewing." data-zh="协助对接贷款预批，并为您建立精选清单。在您花时间看房前，先比较社区、房型和实际居住细节。">Pre-approval connections plus a curated shortlist. We compare neighbourhoods, home types and practical details before you spend weekends viewing.</p></div>
-        <div class="step reveal d2"><div class="num">3</div><h3 data-en="Offer &amp; Negotiate" data-zh="出价与谈判">Offer &amp; Negotiate</h3><p data-en="Smart, data-backed offers and firm negotiation to protect your budget and your interests." data-zh="以数据支持的明智出价与坚定谈判，守护您的预算与利益。">Smart, data-backed offers and firm negotiation to protect your budget and your interests.</p></div>
-        <div class="step reveal d3"><svg class="step-balloon" viewBox="0 0 200 260" aria-hidden="true"><use href="#remax-balloon"/></svg><div class="num">4</div><h3 data-en="Close &amp; Celebrate" data-zh="成交与庆祝">Close &amp; Celebrate</h3><p data-en="Inspections, paperwork and legal contacts handled — then the keys to your new BC home." data-zh="验房、文件与律师对接全部办妥——然后交付您 BC 新家的钥匙。">Inspections, paperwork and legal contacts handled — then the keys to your new BC home.</p></div>
+        <div class="step reveal"><div class="num">1</div><h3 data-en="Free Buyer Consultation" data-zh="免费买房咨询">Free Buyer Consultation</h3><p data-en="Tell me your goals, budget, timing and preferred areas. We can discuss the plan in Chinese or English." data-zh="先告诉我目标、预算、时间和想了解的地区，再用中文或英文一起讨论买房计划。">Tell me your goals, budget, timing and preferred areas. We can discuss the plan in Chinese or English.</p></div>
+        <div class="step reveal d1"><div class="num">2</div><h3 data-en="Compare &amp; Shortlist Homes" data-zh="比较并筛选房屋">Compare &amp; Shortlist Homes</h3><p data-en="Talk to your lender about financing early. Then compare areas and home types against your budget and daily needs before arranging viewings." data-zh="先与贷款机构讨论融资，再按预算、社区、屋型和平日需要缩小范围，安排更有重点的看房。">Talk to your lender about financing early. Then compare areas and home types against your budget and daily needs before arranging viewings.</p></div>
+        <div class="step reveal d2"><div class="num">3</div><h3 data-en="Offer &amp; Negotiate" data-zh="出价与谈判">Offer &amp; Negotiate</h3><p data-en="Review comparable sales, discuss price and conditions, and understand the deadlines and trade-offs before submitting an offer." data-zh="参考相近成交，讨论价格和购买条件，并在提交出价前看清期限与取舍。">Review comparable sales, discuss price and conditions, and understand the deadlines and trade-offs before submitting an offer.</p></div>
+        <div class="step reveal d3"><svg class="step-balloon" viewBox="0 0 200 260" aria-hidden="true"><use href="#remax-balloon"/></svg><div class="num">4</div><h3 data-en="Prepare for Possession" data-zh="准备交割与交屋">Prepare for Possession</h3><p data-en="Keep track of inspections, documents and deadlines with your lender, lawyer or notary and other professionals. Know what still needs to be completed before you get the keys." data-zh="与贷款机构、律师／公证人等专业人士核对验房、文件和期限，交屋前确认还有哪些事情要完成。">Keep track of inspections, documents and deadlines with your lender, lawyer or notary and other professionals. Know what still needs to be completed before you get the keys.</p></div>
       </div>
     </div>
   </div>
@@ -914,11 +949,11 @@ body{background:var(--paper)}
       <div class="faq">
         <div class="faq-item reveal">
           <button class="faq-q" onclick="toggleFaq(this)"><span data-en="How do you help me choose the right home in Greater Vancouver or the Fraser Valley?" data-zh="您如何帮助我在大温或菲沙河谷选到合适的房屋？">How do you help me choose the right home in Greater Vancouver or the Fraser Valley?</span><span class="pm">+</span></button>
-          <div class="faq-a"><p data-en="We start with your budget, lifestyle, commute, family plans and timing. Then I help you compare neighbourhoods, home types, strata documents, recent sales and resale potential, so your shortlist is based on what fits you — not just what looks good online." data-zh="我们会先了解您的预算、生活方式、通勤、家庭计划和时间安排；再比较社区、房型、分层物业文件、近期成交和转售潜力，让您的精选房源真正适合自己，而不只是网上看起来漂亮。">We start with your budget, lifestyle, commute, family plans and timing. Then I help you compare neighbourhoods, home types, strata documents, recent sales and resale potential, so your shortlist is based on what fits you — not just what looks good online.</p></div>
+          <div class="faq-a"><p data-en="We start with your budget, daily routine and timing. I help you compare areas, home types, strata documents and recent sales, then choose which homes are worth viewing." data-zh="先谈预算、平日安排和时间，再比较社区、屋型、物业文件与近期成交，一起决定哪些房屋值得实地看。">We start with your budget, daily routine and timing. I help you compare areas, home types, strata documents and recent sales, then choose which homes are worth viewing.</p></div>
         </div>
         <div class="faq-item reveal">
           <button class="faq-q" onclick="toggleFaq(this)"><span data-en="Can you assist foreign or international buyers?" data-zh="您能协助海外或国际买家吗？">Can you assist foreign or international buyers?</span><span class="pm">+</span></button>
-          <div class="faq-a"><p data-en="Yes. I provide fully bilingual guidance through BC's taxes, foreign-buyer rules, financing options and timelines, and connect you with mortgage and legal professionals experienced with international clients." data-zh="可以。我提供全程双语指导，帮助您了解 BC 税务、海外买家规定、融资方案与时间安排，并为您对接熟悉国际客户的贷款与法律专业人士。">Yes. I provide fully bilingual guidance through BC's taxes, foreign-buyer rules, financing options and timelines, and connect you with mortgage and legal professionals experienced with international clients.</p></div>
+          <div class="faq-a"><p data-en="First, confirm whether you can purchase under the rules that apply to you. I can help with the home search and connect you with legal, tax and lending professionals for questions within their expertise." data-zh="先核对按您的情况，现行规定是否允许购买。我可以协助选屋；法律、税务和贷款问题，会建议您向相应专业人士确认。">First, confirm whether you can purchase under the rules that apply to you. I can help with the home search and connect you with legal, tax and lending professionals for questions within their expertise.</p></div>
         </div>
         <div class="faq-item reveal">
           <button class="faq-q" onclick="toggleFaq(this)"><span data-en="Which areas do you serve?" data-zh="您服务哪些区域？">Which areas do you serve?</span><span class="pm">+</span></button>
@@ -926,11 +961,11 @@ body{background:var(--paper)}
         </div>
         <div class="faq-item reveal">
           <button class="faq-q" onclick="toggleFaq(this)"><span data-en="Do you offer service in Chinese?" data-zh="您提供中文服务吗？">Do you offer service in Chinese?</span><span class="pm">+</span></button>
-          <div class="faq-a"><p data-en="Yes — full service in both 中文 (Mandarin) and English. Every document, condition and number is explained in the language you're most comfortable with." data-zh="是的——提供中文（普通话）与英文的全程服务。每份文件、条件与数字，都会以您最熟悉的语言为您讲解。">Yes — full service in both 中文 (Mandarin) and English. Every document, condition and number is explained in the language you're most comfortable with.</p></div>
+          <div class="faq-a"><p data-en="Yes. I offer service in Mandarin and English. We can discuss the search and documents in the language you prefer. For specialist questions, I will help you find the appropriate professional." data-zh="可以。我提供普通话和英文服务，用您熟悉的语言讨论选屋、文件和下一步。遇到需要专业意见的问题，我会协助联系适当人士。">Yes. I offer service in Mandarin and English. We can discuss the search and documents in the language you prefer. For specialist questions, I will help you find the appropriate professional.</p></div>
         </div>
         <div class="faq-item reveal">
           <button class="faq-q" onclick="toggleFaq(this)"><span data-en="How are your fees structured?" data-zh="您的费用如何收取？">How are your fees structured?</span><span class="pm">+</span></button>
-          <div class="faq-a"><p data-en="For buyers, my services are typically at no direct cost to you, as commission is usually paid by the seller. For sellers, I'll walk you through commission clearly before you list — no surprises. Let's discuss your specifics on a free call." data-zh="对买家而言，我的服务通常不向您直接收费，佣金一般由卖方支付。对卖家而言，在挂牌前我会清楚说明佣金——绝无意外。欢迎通过免费通话讨论您的具体情况。">For buyers, my services are typically at no direct cost to you, as commission is usually paid by the seller. For sellers, I'll walk you through commission clearly before you list — no surprises. Let's discuss your specifics on a free call.</p></div>
+          <div class="faq-a"><p data-en="The initial consultation is free. Before you agree to representation, I will explain the services, commission arrangements and costs you may need to pay. Payment depends on the agreement and transaction, so buyer services should not be assumed to be free." data-zh="首次咨询免费。在您同意代理安排前，我会说明服务内容、佣金怎样支付，以及您可能要付哪些费用。具体按协议和交易确认，不应假定买家服务一定免费。">The initial consultation is free. Before you agree to representation, I will explain the services, commission arrangements and costs you may need to pay. Payment depends on the agreement and transaction, so buyer services should not be assumed to be free.</p></div>
         </div>
       </div>
       <div style="text-align:center;margin-top:44px" class="reveal">
@@ -949,9 +984,9 @@ body{background:var(--paper)}
     <div class="cloud cloud1" aria-hidden="true"></div>
     <svg class="balloon" viewBox="0 0 200 260" aria-hidden="true"><use href="#remax-balloon"/></svg>
     <div class="container">
-      <p class="eyebrow">小红书 · RedNote</p>
-      <h2 data-en="Phoebe's RedNote Posts" data-zh="Phoebe 的小红书笔记">Phoebe 的小红书笔记</h2>
-      <p data-en="Tips, market updates and real estate insights — follow along on RedNote." data-zh="置业贴士、市场动态与地产资讯——关注我的小红书。">置业贴士、市场动态与地产资讯——关注我的小红书。</p>
+      <p class="eyebrow" data-en="RedNote" data-zh="小红书">RedNote</p>
+      <h2 data-en="Phoebe's RedNote Posts" data-zh="Phoebe 的小红书笔记">Phoebe's RedNote Posts</h2>
+      <p data-en="Follow my RedNote for home-buying tips, area visits and relocation stories." data-zh="在小红书里，聊聊选屋、看社区和搬家的实际体验。">Follow my RedNote for home-buying tips, area visits and relocation stories.</p>
     </div>
     <svg class="hero-wave" viewBox="0 0 1440 90" preserveAspectRatio="none" aria-hidden="true"><path d="M0 60 C240 10 480 90 720 60 C960 30 1200 90 1440 50 L1440 90 L0 90 Z" fill="#ffffff"/></svg>
   </div>
@@ -961,13 +996,13 @@ body{background:var(--paper)}
       <div style="text-align:center;margin-bottom:44px" class="reveal">
         <a href="http://xhslink.com/m/6CeD9y0fgsg" target="_blank" rel="noopener" class="btn btn-primary btn-lg">
           <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><rect x="2" y="4" width="20" height="16" rx="4"/></svg>
-          <span data-en="Follow my RedNote" data-zh="关注我的小红书主页">关注我的小红书主页</span>
+          <span data-en="Follow my RedNote" data-zh="关注我的小红书主页">Follow my RedNote</span>
         </a>
       </div>
 
       <div class="cta-band" style="margin-bottom:36px">
-        <div><h2 data-en="Thinking about buying in Mission?" data-zh="想了解 Mission 是否适合置业？">Thinking about buying in Mission?</h2><p data-en="Read Phoebe’s local living guide, with commuting information, parks and a practical home-buying checklist." data-zh="从 Phoebe 的亲身生活观察出发，了解通勤、公园与买房筛选清单。">Read Phoebe’s local living guide, with commuting information, parks and a practical home-buying checklist.</p></div>
-        <div class="hero-cta"><a class="btn btn-outline" href="/areas/mission/" data-en="Read the Mission guide →" data-zh="阅读 Mission 指南 →">Read the Mission guide →</a></div>
+        <div><h2 data-en="Where would you like to buy?" data-zh="想先了解哪个地区？">Where would you like to buy?</h2><p data-en="Use the buying guides to compare areas, work through your budget and prepare questions for a viewing." data-zh="打开买房指南，比较地区、算一算预算，也准备好看房时要问的问题。">Use the buying guides to compare areas, work through your budget and prepare questions for a viewing.</p></div>
+        <div class="hero-cta"><a class="btn btn-outline" href="/guides/" data-en="Explore Buying Guides →" data-zh="浏览买房指南 →">Explore Buying Guides →</a></div>
       </div>
 
       <div class="grid-notes" id="notesGrid">
@@ -975,7 +1010,7 @@ body{background:var(--paper)}
         <a class="note-card reveal" href="http://xhslink.com/m/2p2sPjmvyDv" target="_blank" rel="noopener">
           <div class="note-img"><img src="note1.jpg" alt="我们家搬卡尔加里，住一年就搬走的原因（1）" width="900" height="1200" loading="lazy"></div>
           <div class="note-body">
-            <p class="note-tag" data-en="RedNote Post" data-zh="小红书笔记">小红书笔记</p>
+            <p class="note-tag" data-en="RedNote Post" data-zh="小红书笔记">RedNote Post</p>
             <h3>我们家搬卡尔加里，住一年就搬走的原因（1）</h3>
             <p class="note-desc">点击查看详情 →</p>
           </div>
@@ -984,7 +1019,7 @@ body{background:var(--paper)}
         <a class="note-card reveal d1" href="http://xhslink.com/m/2cCEVJaZbEd" target="_blank" rel="noopener">
           <div class="note-img"><img src="note2.jpg" alt="加拿大坦白局" width="900" height="1200" loading="lazy"></div>
           <div class="note-body">
-            <p class="note-tag" data-en="RedNote Post" data-zh="小红书笔记">小红书笔记</p>
+            <p class="note-tag" data-en="RedNote Post" data-zh="小红书笔记">RedNote Post</p>
             <h3>加拿大🇨🇦坦白局</h3>
             <p class="note-desc">点击查看详情 →</p>
           </div>
@@ -993,7 +1028,7 @@ body{background:var(--paper)}
         <a class="note-card reveal d2" href="http://xhslink.com/m/23biCXIJuMB" target="_blank" rel="noopener">
           <div class="note-img"><img src="note3.jpg" alt="大温周边价值洼地 菲莎河谷Mission BC" width="900" height="1200" loading="lazy"></div>
           <div class="note-body">
-            <p class="note-tag" data-en="RedNote Post" data-zh="小红书笔记">小红书笔记</p>
+            <p class="note-tag" data-en="RedNote Post" data-zh="小红书笔记">RedNote Post</p>
             <h3>大温周边价值洼地｜菲莎河谷Mission，BC</h3>
             <p class="note-desc">点击查看详情 →</p>
           </div>
@@ -1002,7 +1037,7 @@ body{background:var(--paper)}
         <a class="note-card reveal" href="http://xhslink.com/m/8fSa6hZpWNt" target="_blank" rel="noopener">
           <div class="note-img"><img src="note4.jpg" alt="加拿大跨省搬家三个省的居住体验" width="900" height="1200" loading="lazy"></div>
           <div class="note-body">
-            <p class="note-tag" data-en="RedNote Post" data-zh="小红书笔记">小红书笔记</p>
+            <p class="note-tag" data-en="RedNote Post" data-zh="小红书笔记">RedNote Post</p>
             <h3>🇨🇦加拿大跨省搬家！三个省的居住体验</h3>
             <p class="note-desc">点击查看详情 →</p>
           </div>
@@ -1011,7 +1046,7 @@ body{background:var(--paper)}
         <a class="note-card reveal d1" href="http://xhslink.com/m/8G7nNZt5Fk8" target="_blank" rel="noopener">
           <div class="note-img"><img src="note5.jpg" alt="南素里买房大实话" width="900" height="1145" loading="lazy"></div>
           <div class="note-body">
-            <p class="note-tag" data-en="RedNote Post" data-zh="小红书笔记">小红书笔记</p>
+            <p class="note-tag" data-en="RedNote Post" data-zh="小红书笔记">RedNote Post</p>
             <h3>南素里买房大实话‼️</h3>
             <p class="note-desc">点击查看详情 →</p>
           </div>
@@ -1020,7 +1055,7 @@ body{background:var(--paper)}
         <a class="note-card reveal d2" href="http://xhslink.com/m/9i7ZQHVQCXS" target="_blank" rel="noopener">
           <div class="note-img"><img src="note6.jpg" alt="预算90万左右兰里Langley联排买房大实话" width="900" height="1500" loading="lazy"></div>
           <div class="note-body">
-            <p class="note-tag" data-en="RedNote Post" data-zh="小红书笔记">小红书笔记</p>
+            <p class="note-tag" data-en="RedNote Post" data-zh="小红书笔记">RedNote Post</p>
             <h3>预算90万左右，兰里Langley联排买房大实话</h3>
             <p class="note-desc">点击查看详情 →</p>
           </div>
@@ -1029,7 +1064,7 @@ body{background:var(--paper)}
         <a class="note-card reveal" href="http://xhslink.com/m/7U94rN5YkGC" target="_blank" rel="noopener">
           <div class="note-img"><img src="note7.jpg" alt="温哥华周边买房阿伯茨福德Abbotsford" width="900" height="900" loading="lazy"></div>
           <div class="note-body">
-            <p class="note-tag" data-en="RedNote Post" data-zh="小红书笔记">小红书笔记</p>
+            <p class="note-tag" data-en="RedNote Post" data-zh="小红书笔记">RedNote Post</p>
             <h3>🇨🇦温哥华周边买房｜阿伯茨福德 Abbotsford</h3>
             <p class="note-desc">点击查看详情 →</p>
           </div>
@@ -1050,7 +1085,7 @@ body{background:var(--paper)}
     <div class="container">
       <p class="eyebrow" data-en="Contact" data-zh="联系方式">Contact</p>
       <h2 data-en="Start your Greater Vancouver or Fraser Valley home search" data-zh="开始您的大温或菲沙河谷置业计划">Start your Greater Vancouver or Fraser Valley home search</h2>
-      <p data-en="Book a buyer consultation, ask about a neighbourhood, or get help comparing homes — in Chinese or English. Phoebe will reply quickly." data-zh="预约买房咨询、询问社区情况，或获得房屋比较建议——中文或英文皆可。Phoebe 会尽快回复您。">Book a buyer consultation, ask about a neighbourhood, or get help comparing homes — in Chinese or English. Phoebe will reply quickly.</p>
+      <p data-en="Have a neighbourhood question or a home in mind? Tell me where you are looking and what matters to you. We can discuss the next step in Chinese or English." data-zh="想了解一个地区，或已有心仪房屋？告诉我您在哪里看房、最在意什么，我们可以用中文或英文讨论下一步。">Have a neighbourhood question or a home in mind? Tell me where you are looking and what matters to you. We can discuss the next step in Chinese or English.</p>
     </div>
     <svg class="hero-wave" viewBox="0 0 1440 90" preserveAspectRatio="none" aria-hidden="true"><path d="M0 60 C240 10 480 90 720 60 C960 30 1200 90 1440 50 L1440 90 L0 90 Z" fill="#ffffff"/></svg>
   </div>
@@ -1061,8 +1096,8 @@ body{background:var(--paper)}
         <!-- form -->
         <div class="form-card reveal">
           <h3 style="font-size:1.4rem;margin-bottom:8px" data-en="Send a message" data-zh="发送留言">Send a message</h3>
-          <p style="color:var(--muted);margin-bottom:24px" data-en="Tell Phoebe your target area, budget and goals. She will help you plan the next best step." data-zh="告诉 Phoebe 您的目标区域、预算和需要，她会协助您规划下一步。">Tell Phoebe your target area, budget and goals. She will help you plan the next best step.</p>
-          <div class="form-success" id="formSuccess" data-en="✓ Thank you! Your message is ready — your email app will open to send it to Phoebe. Prefer to call? +1 (604) 782-6896." data-zh="✓ 谢谢！您的留言已准备好——邮件应用将打开以发送给 Phoebe。想直接致电？+1 (604) 782-6896。">✓ Thank you! Your message is ready — your email app will open to send it to Phoebe. Prefer to call? +1 (604) 782-6896.</div>
+          <p style="color:var(--muted);margin-bottom:24px" data-en="Share your target area, budget range, timing and questions. Please do not include bank details or identity documents in this form." data-zh="写下目标地区、预算范围、时间安排与疑问。请勿在此表格提交银行资料或身份证件。">Share your target area, budget range, timing and questions. Please do not include bank details or identity documents in this form.</p>
+          <div class="form-success" id="formSuccess" data-en="✓ Your message has been sent. For a time-sensitive enquiry, please call +1 (604) 782-6896." data-zh="✓ 留言已发送。如需尽快联系，请致电 +1 (604) 782-6896。">✓ Your message has been sent. For a time-sensitive enquiry, please call +1 (604) 782-6896.</div>
           <form id="contactForm" action="https://formspree.io/f/xykqergr" method="POST" onsubmit="return submitForm(event)">
             <div class="form-row">
               <div class="field"><label data-en="Full Name" data-zh="姓名">Full Name</label><input type="text" name="name" id="cName" required data-en-ph="Your name" data-zh-ph="您的姓名" placeholder="Your name"></div>
@@ -1083,7 +1118,7 @@ body{background:var(--paper)}
             <div class="info-item"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 7l-10 6L2 7"/></svg></div><div><div class="l" data-en="Email" data-zh="邮箱">Email</div><a class="v" href="mailto:xiangyawen0628@gmail.com">xiangyawen0628@gmail.com</a></div></div>
             <div class="info-item"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 6-9 12-9 12s-9-6-9-12a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></div><div><div class="l" data-en="Office" data-zh="办公室">Office</div><div class="v">3631 Number 3 Rd #290,<br>Richmond, BC V6X 2B9</div></div></div>
             <div style="margin-top:8px"><div class="l" style="margin-bottom:10px" data-en="Follow on RedNote" data-zh="关注小红书">Follow on RedNote</div>
-              <div class="socials"><a href="http://xhslink.com/m/6CeD9y0fgsg" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><rect x="2" y="4" width="20" height="16" rx="4"/></svg> <span data-en="RedNote · Phoebe是雅雯-大温地产" data-zh="小红书 · Phoebe 是雅雯-大温地产">小红书 · Phoebe 是雅雯-大温地产</span></a></div>
+              <div class="socials"><a href="http://xhslink.com/m/6CeD9y0fgsg" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><rect x="2" y="4" width="20" height="16" rx="4"/></svg> <span data-en="RedNote · Phoebe是雅雯-大温地产" data-zh="小红书 · Phoebe 是雅雯-大温地产">RedNote · Phoebe是雅雯-大温地产</span></a></div>
             </div>
           </div>
           <div class="map-wrap reveal d2">
@@ -1113,7 +1148,7 @@ body{background:var(--paper)}
           <li><a onclick="go('home')" data-en="Home" data-zh="首页">Home</a></li>
           <li><a onclick="go('about')" data-en="About" data-zh="关于">About</a></li>
           <li><a onclick="go('services')" data-en="Services" data-zh="服务">Services</a></li>
-          <li><a onclick="go('notes')" data-en="RedNote" data-zh="小红书">小红书</a></li>
+          <li><a onclick="go('notes')" data-en="RedNote" data-zh="小红书">RedNote</a></li>
           <li><a onclick="go('contact')" data-en="Contact" data-zh="联系">Contact</a></li>
           <li><a href="/guides/" data-en="Buying guides" data-zh="买房指南">Buying guides</a></li>
         </ul>
@@ -1133,7 +1168,7 @@ body{background:var(--paper)}
         <a class="fc" href="tel:+16047826896">+1 (604) 782-6896</a>
         <a class="fc" href="mailto:xiangyawen0628@gmail.com">xiangyawen0628@gmail.com</a>
         <span class="fc">3631 Number 3 Rd #290,<br>Richmond, BC V6X 2B9</span>
-        <a class="fsoc" href="http://xhslink.com/m/6CeD9y0fgsg" target="_blank" rel="noopener"><span data-en="RedNote · Phoebe是雅雯-大温地产" data-zh="小红书 · Phoebe 是雅雯-大温地产">小红书 · Phoebe 是雅雯-大温地产</span></a>
+        <a class="fsoc" href="http://xhslink.com/m/6CeD9y0fgsg" target="_blank" rel="noopener"><span data-en="RedNote · Phoebe是雅雯-大温地产" data-zh="小红书 · Phoebe 是雅雯-大温地产">RedNote · Phoebe是雅雯-大温地产</span></a>
       </div>
     </div>
     <div class="footer-bottom">
@@ -1233,10 +1268,10 @@ function submitForm(e){
       successEl.classList.add('show');
       form.reset();
     } else {
-      alert('Something went wrong. Please email xiangyawen0628@gmail.com directly.');
+      alert(lang==='zh' ? '留言未能发送，请稍后重试，或直接电邮至 xiangyawen0628@gmail.com。' : 'Your message could not be sent. Please try again or email xiangyawen0628@gmail.com.');
     }
   }).catch(()=>{
-    alert('Something went wrong. Please email xiangyawen0628@gmail.com directly.');
+    alert(lang==='zh' ? '留言未能发送，请稍后重试，或直接电邮至 xiangyawen0628@gmail.com。' : 'Your message could not be sent. Please try again or email xiangyawen0628@gmail.com.');
   }).finally(()=>{ btn.disabled = false; });
   return false;
 }
