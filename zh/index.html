@@ -589,6 +589,13 @@ body{background:var(--paper)}
 .home-final .cta-band p{max-width:58ch;margin-left:auto;margin-right:auto}
 @media(max-width:900px){.goal-grid{grid-template-columns:1fr}.goal-card{min-height:330px}.goal-card::before{background-position:center 35%}}
 @media(max-width:760px){.home-hero .hero-cta{gap:10px}.home-hero .hero-cta .btn{width:auto;min-height:44px;padding:.68rem .72rem;font-size:.72rem}.goal-card{min-height:310px;padding:24px}.home-final .cta-band{padding:48px 24px}}
+/* A separate mobile row keeps the consultation link off the portrait. */
+.mobile-consult-row{display:none}
+@media(max-width:760px){
+  .mobile-consult-row{display:flex;justify-content:flex-end;padding:12px max(18px,env(safe-area-inset-right)) 12px max(18px,env(safe-area-inset-left));background:var(--paper)}
+  .mobile-consult-row .btn{min-height:44px;max-width:100%;padding:8px 14px;font-size:.84rem;line-height:1.4;white-space:normal;text-align:center}
+  .footer-grid>div{min-width:0;overflow-wrap:anywhere}
+}
 </style>
 </head>
 <body>
@@ -658,6 +665,9 @@ body{background:var(--paper)}
      HOME
 ========================================================== -->
 <section class="page active" id="home">
+  <div class="mobile-consult-row">
+    <a href="#contact" class="btn btn-primary" data-en="Request a Free Consultation" data-zh="申請免費諮詢">申請免費諮詢</a>
+  </div>
   <div class="hero home-hero">
     <a href="#contact" class="hero-consult-btn" data-en="Tell me your plan" data-zh="告诉我您的计划">告诉我您的计划</a>
     <div class="hero-scene" aria-hidden="true">
@@ -1006,7 +1016,7 @@ body{background:var(--paper)}
         </div>
       </div>
       <div style="text-align:center;margin-top:44px" class="reveal">
-        <a href="#contact" class="btn btn-primary btn-lg" data-en="Book a Free Consultation" data-zh="预约免费咨询">预约免费咨询</a>
+        <a href="#contact" class="btn btn-primary btn-lg" data-en="Request a Free Consultation" data-zh="申請免費諮詢">申請免費諮詢</a>
       </div>
     </div>
   </div>
